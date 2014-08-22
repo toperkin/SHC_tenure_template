@@ -1,0 +1,231 @@
+\documentclass[ openright,titlepage,numbers=noenddot,headinclude,%1headlines,% letterpaper a4paper
+                footinclude=true,cleardoublepage=empty,abstractoff, 
+                BCOR=5mm,paper=letter,fontsize=11pt,%11pt,a4paper,%
+                ngerman, american, %
+                ]{scrreprt}
+%********************************************************************
+% Note: Make all your adjustments in here
+%*******************************************************
+\input{tenure-config}
+\usepackage{pdfpages}
+
+
+\begin{document}
+\frenchspacing
+\raggedbottom
+\selectlanguage{american} % american ngerman
+%\renewcommand*{\bibname}{new name}
+%\setbibpreamble{}
+\pagenumbering{roman}
+\pagestyle{plain}
+%********************************************************************
+% Frontmatter
+%*******************************************************
+\include{FrontBackmatter/Titlepage}
+\pagestyle{scrheadings}
+\cleardoublepage\include{FrontBackmatter/Contents}
+%********************************************************************
+% Mainmatter
+%*******************************************************
+\pagenumbering{arabic}
+%\setcounter{page}{90}
+% use \cleardoublepage here to avoid problems with pdfbookmark
+\cleardoublepage
+\part{Required Materials}
+%\include{Chapters/Chapter01}
+
+% a letter of application which summarizes the reasons why one meets the criteria for promotion, explains the strengths, weaknesses, or anomalies of the applicant, and refers the reader to materials in the dossier which are relevant to these issues. 
+\chapter{Letter of Application}
+%\include{letter.tex}
+
+%b. a statement of her/his philosophy of teaching, research, and service 
+\chapter{Statement of philosophy of teaching}
+%\include{teaching.tex}
+\chapter{Statement of philosophy of research}
+%\include{research.tex}
+\chapter{Statement of philosophy of service}
+%\include{service.tex}
+%c. a complete Curriculum Vitae 
+\chapter{Curriculum Vitae}
+\includepdf[pages=-]{CV/14_08_cv.pdf}
+
+%d. a complete and current Fact Sheet 
+\chapter{Fact Sheet}
+%\include{fs.tex}
+
+%e. materials from the applicant's division chair including: 
+\chapter{Materials from the applicant's division chair}
+
+%1. Annual statement of goals signed by the Division Chair and faculty member (Faculty Manual 1.14.10). 
+\section{Annual Statement of Goals}
+\subsection{The 2011-2012 year}
+\includepdf[pages=-]{Goals/G11.pdf}
+\subsection{The 2012-2013 year}
+\includepdf[pages=-]{Goals/G12.pdf}
+\subsection{The 2013-2014 year}
+\includepdf[pages=-]{Goals/G13.pdf}
+\subsection{The 2014-2015 year}
+\includepdf[pages=-]{Goals/G14.pdf}
+
+
+%2. Annual Faculty Activities Report for each year of teaching at SHC. 
+\section{Annual Faculty Activities Report}
+\subsection{The 2011-2012 year}
+\includepdf[pages=-]{FAR/FAR11-12.pdf}
+\subsection{The 2012-2013 year}
+\includepdf[pages=-]{FAR/FAR12-13.pdf}
+\subsection{The 2013-2014 year}
+\includepdf[pages=-]{FAR/FAR13-14.pdf}
+
+%3. the chair’s annual evaluation (Faculty Manual 1.14.8) 
+\section{The Chair's Annual Evaluation}
+\subsection{The 2011-2012 year}
+\includepdf[pages=-]{CE/CE11-12.pdf}
+\subsection{The 2012-2013 year}
+\includepdf[pages=-]{CE/CE12-13.pdf}
+\subsection{The 2013-2014 year}
+\includepdf[pages=-]{CE/CE13-14.pdf}
+%4. when applicable, the chair's pre-tenure review letter (Faculty Manual 1.14.13) 
+%\subsection{}
+
+
+%f. a letter of evaluation from the applicant's department chair 
+\chapter{A letter of evaluation from the applicant's department chair}
+\includepdf[pages=-]{DCL.pdf}
+
+%g. materials relating to teaching include the following: 
+\chapter{Materials relating to teaching}
+
+%1. a complete set of syllabi for courses taught over the past three years (Faculty Manual 1.14.6) 
+\section{A complete set of syllabi}
+\subsection{Fall 2011}
+\subsubsection{MTHxxx.xx}
+\includepdf[pages=-]{Syllabi/Fa11/Syllabi.pdf}
+
+
+\subsection{Spring 2012}
+\subsubsection{MTHxxx.xx}
+\includepdf[pages=-]{Syllabi/Sp12/Syllabi.pdf}
+
+
+
+\subsection{Fall 2012}
+\subsubsection{MTHxxx.xx}
+\includepdf[pages=-]{Syllabi/Fa12/Syllabi.pdf}
+
+
+\subsection{Spring 2013}
+\subsubsection{MTHxxx.xx}
+\includepdf[pages=-]{Syllabi/Sp13/Syllabi.pdf}
+
+
+
+\subsection{Fall 2013}
+\subsubsection{MTHxxx.xx}
+\includepdf[pages=-]{Syllabi/Fa13/Syllabi.pdf}
+
+
+\subsection{Spring 2014}
+\subsubsection{MTHxxx.xx}
+\includepdf[pages=-]{Syllabi/Sp14/Syllabi.pdf}
+
+
+\subsection{Fall 2014}
+\subsubsection{MTHxxx.xx}
+\includepdf[pages=-]{Syllabi/Fa14/Syllabi.pdf}
+
+
+
+%2. report(s) by department chair, division chair and/or Provost on classroom visitations as required (Faculty Manual 1.14.13). 
+\section{Report on classroom visitations}
+\subsection{Fall 2011}
+\includepdf[pages=-]{Visits/Visit.pdf}
+\subsection{Spring 2012}
+\includepdf[pages=-]{Visits/Visit.pdf}
+\subsection{Fall 2012}
+\includepdf[pages=-]{Visits/Visit.pdf}
+\subsection{Fall 2013}
+\includepdf[pages=-]{Visits/Visit.pdf}
+
+%3. Student Reaction-to-Instruction forms as required (Faculty Manual 1.14.5 and 1.14.6). 
+\section{Student Reaction-to-Instruction forms}
+\subsubsection{MTHxxx.xx}
+\includepdf[pages=-]{SRI/Fa11/SRI.pdf}
+
+
+\subsection{Spring 2012}
+\subsubsection{MTHxxx.xx}
+\includepdf[pages=-]{SRI/Sp12/SRI.pdf}
+
+
+
+\subsection{Fall 2012}
+\subsubsection{MTHxxx.xx}
+\includepdf[pages=-]{SRI/Fa12/SRI.pdf}
+
+
+\subsection{Spring 2013}
+\subsubsection{MTHxxx.xx}
+\includepdf[pages=-]{SRI/Sp13/SRI.pdf}
+
+
+
+\subsection{Fall 2013}
+\subsubsection{MTHxxx.xx}
+\includepdf[pages=-]{SRI/Fa13/SRI.pdf}
+
+
+\subsection{Spring 2014}
+\subsubsection{MTHxxx.xx}
+\includepdf[pages=-]{SRI/Sp14/SRI.pdf}
+
+
+
+%4. Any other materials (e.g., a teaching portfolio) which serve to demonstrate excellence in teaching. 
+%h. evidence of scholarship and professional development (e.g., a portfolio) 
+\section{Evidence of scholarship and professional development}
+\subsection{Summary}
+\input{EvScholarship.tex}
+\subsection{Publications}
+\includepdf[pages=-]{Pubs/pub1.pdf}
+
+%i. evidence of service to the college, to the department/division, to students, and to the community. 
+\section{Evidence of service}
+\input{EvService.tex}
+%j. those faculty who have received credit for teaching experience at other institutions must provide documentation on the quality of that experience. 
+
+
+\cleardoublepage
+\ctparttext{Lorem ipsum...}
+\part{Supplemental Materials}
+%\include{Chapters/Chapter02}
+%\include{Chapters/Chapter03}
+%a. reports on classroom visitation by a tenured member of the applicant’s department, and by a tenured faculty member outside the applicant's department but within the division. Such visitations should be conducted once every third semester, and should include the spring semester prior to the year in which  the application for promotion is submitted. 
+%b. a letter of evaluation from a fellow member of a committee of the Faculty Assembly. 
+%c. a letter of evaluation from a junior or senior student in a class taught in the last year. 
+%d. a letter of evaluation from a recent graduate. 
+%e. a letter of evaluation from an outside professional in your field. 
+%f. any other documentation relevant to your application. 
+
+% ********************************************************************
+% Backmatter
+%*******************************************************
+
+
+%\appendix
+%\cleardoublepage
+%\part{Appendix}
+%\include{Chapters/Chapter0A}
+
+
+%********************************************************************
+% Other Stuff in the Back
+%*******************************************************
+\cleardoublepage\include{FrontBackmatter/Bibliography}
+%\cleardoublepage\include{FrontBackmatter/Colophon}
+\cleardoublepage\include{FrontBackmatter/Declaration}
+% ********************************************************************
+% Game Over: Restore, Restart, or Quit?
+%*******************************************************
+\end{document}
+% ********************************************************************
